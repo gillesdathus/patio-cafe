@@ -1,0 +1,132 @@
+body {
+    font-family: lora, sans-serif;
+    font-size: 18px;
+    color: white;
+    /*by default background-images will tile/repeat*/
+    background-image: url("assets/background.svg");
+    /*fix the page at 640px*/
+    max-width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+}
+
+header {
+    background-color: white;
+    padding: 40px;
+}
+footer {
+    padding: 10px;
+    background-color: red;
+}
+footer a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: white;
+}
+footer a:hover {
+    color: blue;
+    border-bottom: 3px solid white;
+}
+
+nav {
+    background-color: red;
+    padding: 20px 40px 20px 40px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+section {
+    background-color: #5000ff;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+section img {
+    width: 100%;
+    padding: 0;
+}
+.img, .map {
+    width: auto;
+    padding: 0 0 40px 0;
+    /*padding-bottom: 40px;*/
+}
+/*.map {*/
+/*    !*width: 640px;*!*/
+/*    padding: 0;*/
+/*    !*margin-top: 20px;*!*/
+/*}*/
+
+blockquote {
+    font-size: 32px;
+    line-height: 1.2;
+    font-style: italic;
+    /*margin-top: 40px;*/
+    /*margin-bottom: 40px;*/
+    margin: 40px 0 40px 0;
+}
+ .contact p {
+     margin-top: 20px;
+ }
+
+ .contact a {
+     text-decoration: none;
+     color: white;
+     border-bottom: 3px solid red;
+     padding-bottom: 2px;
+ }
+
+ nav a:hover {
+     color: #5000ff;
+     border-bottom: 3px solid white;
+     padding-bottom: 2px;
+ }
+
+ /* Responsive CSS - Media Queries */
+
+@media (max-width: 740px) {
+    section, header {
+        padding: 20px;
+    }
+    nav {
+        padding: 10px 20px 10px 20px;
+    }
+    h2, blockquote {
+        font-size: 24px;
+    }
+
+    blockquote {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    body {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 16px;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0 10px 0;
+    }
+    footer a {
+        display: block;
+        margin: 5px 0 10px 0;
+    }
+    footer a:hover {
+        border: none;
+    }
+    footer p {
+        font-size: 16px;
+    }
+    nav a:hover {
+        border: none;
+    }
+}
